@@ -1,0 +1,39 @@
+Welcome to ITECH190: Intro To Computer Science
+
+Instructor: Justin Cox
+Email: justin.cox@lltc.edu
+Office: Bullpen #1
+Discord: Pandadadx7
+Office Hours: By Appoinment
+
+Class Times: Tuesdays and Thursdays, 9:00am to 10:15am
+Classroom: 111
+
+Required Materials:
+Book: Crossing The River with Dogs 3rd Edition By Ken Johnson, Ted Herr, & Judy Kysh, ISBN: 978-1-1192-7509-1
+
+Github:  All students will be creating a Github account and taught how to use it during the first lab. Git will
+        be pre-installed on campus machines. Installation guieds for personal machines can be found at:
+        https://git-scm.com/ 
+
+VSCode: This is the text editor we will be using for this class.  It will be pre-installed on campus machines.
+        Installation guides for personal machines can be found at:
+        https://code.visualstudio.com/
+
+Python: This is the programming language you will be learning in this class. It will be pre-installed on campus 
+        machines.  Installation guides for personal machines can be found 
+        at https://www.python.org/
+
+What to expect from this class:
+This class aims to do 2 things. 1) Teach students how to think / problem solve as copmuter scientists, and
+2) how to use the Python programming language.  To accomplish this
+
+github instructions:
+1) clone the repo:  git clone <address to repo>
+2) make your own repo on your git hub account
+3) get the https link to your repo
+4) open a terminal and make sure you are in the directory of your project
+5) enter the following command
+     git remote set-url origin <link to your repo>
+6) make updates to the code
+7) git add, commit, push
