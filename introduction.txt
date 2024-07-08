@@ -26,14 +26,20 @@ Python: This is the programming language you will be learning in this class. It 
 
 What to expect from this class:
 This class aims to do 2 things. 1) Teach students how to think / problem solve as copmuter scientists, and
-2) how to use the Python programming language.  To accomplish this
+2) how to use the Python programming language.  To accomplish this is actually fairly simple.  You just need to 
+put in the time doing the things over and over.  The old adage of "don't do something until you get it right,
+do it until you can't get it wrong." applies here.  While the topics covered in this class won't take hours 
+upon hours to learn, it will take more than simply looking over it in the book.
 
-github instructions:
-1) clone the repo:  git clone <address to repo>
-2) make your own repo on your git hub account
-3) get the https link to your repo
-4) open a terminal and make sure you are in the directory of your project
-5) enter the following command
-     git remote set-url origin <link to your repo>
-6) make updates to the code
-7) git add, commit, push
+Weekly Breakdown:
+Tuesday: introduce the topic for the week, discuss it, and do several practice problems as a class.  Additional 
+problems will be assigned as homework and they will be due the following Tuesday.
+
+Thursday: Lab.  We will be focusing on learning the python programming language and implementing problem
+solving techniques learned on Tuesday.  Any work not completed during the lab will be due the following Thursday.
+
+Assignments:
+All assignemnts will be handed in via Github.  Git version control is an important technology to get used to using 
+so we will utilize it as our primary delivery method for assignments and labs.  The process for doing this and What
+needs to be included with every assignment will be discussed during our first labs.
+

@@ -1,0 +1,169 @@
+Drawing A Diagram
+
+Diagrams are often the key to getting started with problems.  They clarify 
+complex relationships within the problem.  Architects, electrical engineers, 
+construction workers, nearly all professions use diagrams in some way to
+help them visualize problems and relationships.
+
+Diagrams specifically help us visualize problems spatialy.  This allows 
+the spacial reasoning parts of the brain to get more involved with 
+solving the problem.  As well as helping us get a better handle on 
+WHAT is actually being asked in the problem.
+
+Basktball League:
+Chapter 1, pg 12
+Andrew and his friends have formed a fantasy basketball league in which each
+team will play three games against each of the other teams.  There are seven 
+teams: The Aggies, The Boilermakers, The Crimson Tide, The Ducks, The Eagles,
+The Falcons, and the Gators.  How many games will be played in total?
+
+Step 1: what is the problem REALLY asking of us?
+In this case it is pretty straight forward.  We want to figure out how many
+total games will be played if each team playes 3 games against each other team.
+To solve this we can draw an image with 7 circles representing each of the 7
+teams.  From there, we can draw a line between any two circles to represent the 
+games between those two teams.  Once we have done this for all 7 teams, we can 
+simply multiply the total number of lines by 3 to get our final answer.
+
+Step 2: draw the problem.
+First lets start by drawing out 7 circles to each of the teams. (Figure 1.1.1)
+From there, lets draw a line conneting the first team to each of the other
+teams. (Figure 1.1.2)  
+
+Question:  how many lines were drawn?
+
+Continue with the second team.  Draw a line connecting the second team to 
+each of the other teams. (Figure 1.1.3) Notice you didn't need to draw a 
+line connecting the second team to the first team since that was already
+done by the first teams lines.
+
+Question: How many new lines were drawn?
+Question: How many total lines are there now?
+
+Conitnue with the third team.  (Figure 1.1.4).  Again notice that you did 
+not need to draw any lines to the first two teams since those have already been 
+taken care of.  Go ahead and finish your drawing by completing all of the lines.
+
+Exercise:  Complete the drawing.
+Question: How many total lines were drawn?
+Quetsion: What is the total number of games played?
+Question: Did you notice a pattern emerge?
+Question: If there were only 6 teams, could you quickly tell me how many games 
+would have been played?  What abotu 10 teams?
+Question: Can you generalize this pattern?
+
+The Model Train:
+Chapter 1, pg 15
+Esther has a model train set up on a circular track.  6 telephone poles are spaced
+evenly around the track. The engine of the train takes 10 seconds to go from the 
+1st pole to the 3rd pole.  How long would it take the engine to go all the way 
+around the track?
+
+Step 1: what is the problem really asking us?
+This one is seems pretty straight forward, and for the most part it is.  We want
+to know how long it takes the front of the engine to travel around the circluar track.
+
+Question:  Based on the information given, what is your first response? 
+
+For many the first reaction would be 20 seconds.  Since it takes 10 seconds to go from
+the first to the third light pole, and 3 is half of 6.  That means 10 seconds x 2 = 20 
+seconds.  However that is not exactly right.  The answer will become more apparent 
+once you draw out the problem.
+
+Step 2: draw the problem.
+Start by drawing out the circular track and mark down 6 light poles, and mark that it  
+took 10 seconds to travel from pole 1 to pole 3. (Firgure 1.2.1).  Once it is drawn
+out this way, it is easy to see that it did not cover half of the circle, so the original 
+answer of 20 seconds can't be right.
+
+Notice that the light poles, divide the train track into 6 distinct sections. (figure 1.2.2)
+
+Question: How many sections did the train cover in 10 seconds?
+Question: How long would it take for the train to travel all the way around the track?
+Question: If Esther were to keep the track the exact same length but increased the number of 
+light poles to 10, how long would it take to travel around the entire track?
+Question: if Esther were to keep the distance between the light poles the same as in the original 
+question, but increased the track size to accomodate 10 light poles.  How long would it take 
+for the enginge to traverse the entire circle?
+
+The Pool Deck
+Chapter 1, pg 17
+Curly used a shovel to dighis own swiming pool. He figured he needed a pool because digging it was 
+hard and hecould se it to cool off after working on it all day.  He also planned to beuild a 
+rectangular concrete deck around the pool that would be 6 feet wide at all points.  The pool is 
+rectangular and measures 14 feet by 40 feet.  what is the AREA of the DECK?
+
+Step 1: What is the question really asking of us?
+In this instance we want to figure out what the area of the pool deck is.  However we don't 
+actually know the measurements of the deck.  We only know the measurements of the pool and 
+that the deck is 6 feet wide at all points.
+
+Step 2: Write down what we do know about the problem.
+The pool: 14ft by 40ft
+the deck: 6ft wide at all points.
+area of a rectangle: base * height
+
+Step 3: Draw the problem
+To draw this problem draw a rectangle with a height of 14 and a width of 40.  Then draw a larger
+rectangle around the first one.  this will have a height of 26 (14 + 6 top + 6 bottom) and a width
+of 52 (40 + 6 left + 6 right).  Figure 1.3.1
+
+From here, there are multiple ways to break this problem down to answer it.
+
+Question: can you identify at least 3 ways to do it?
+
+First solution: break it down into sides and corners.  Figure 1.3.2
+Second solution: add the corners to either the lengths or the sides.  Figure 1.3.3
+Third solution: difference of areas.  
+
+Once you have the image broken down into its consituent parts, it is simple to find the area of 
+each individual part and add them all together.
+
+Question: What is the area of the pool deck?
+Question: What is the perimeter of the pool deck?
+Question: Though outide the scope of this class, what would you do if the pool had an irregular shape?
+
+
+Farmer Ben
+Chapter 1, pg 19
+Farmer Ben only has ducks and cows.  But he can't remember how many of each he has.  But lucky for him, 
+he doesn't need to remember because he knows he has 22 animals, and 22 is also his age.  he also knows
+that his animals have a total of 56 legs.  Because that is his fathers age.  Assuming no missing legs 
+or abnormalities.  How many of each animal does Farmer Ben have?
+
+Step 1: What is the question really asking us?
+in this scenario we know that we have 22 total animals between some number of ducks and some number of
+cows.  We want to figure out exactly how many of each we have.
+
+Step 2.  What do we know?
+we have 22 animals total
+we have 56 legs totals
+ducks have two legs
+cows have 4 legs
+
+Step 3: Draw the problem.
+Start by drawing 22 circles to represent 22 animals.  figure 1.4.1.  Next since both ducks and cows have
+at least 2 legs.  we can add 2 legs to all of them (currently this makes them all ducks). Figure 1.4.2.
+
+Question:  how many legs do we currently have?
+
+Since we currently have fewer than 56 legs, we can keep adding 2 legs, turning them into cows, until we
+reach 56 total legs.  figure 1.4.3
+
+Question: How many ducks and how many cow does Farmer Ben have?
+Question: if we let X = the number of ducks, and Y = the number of cows.  And we know that X+Y = 22 total animals.
+And we know that 2X+4Y=56 total legs.  Could we solve this using only algebra?
+
+In Class Exercise:
+Please complete questions 1 thorugh 4 of Problem Set A, pages 20-21.  
+
+Homework:
+Complete problems 1-3 of the 'More Practice' on pages 25-25.  The answers for these problems are in the back
+of the book for you to reference.  Please note, in an academic settings, getting the correct answer is only
+part of the problem.  More important is showing the process you went through to get the answer.  Especially
+in this class where learning HOW to problem solve is the sole purpose.  
+
+your assignment must be in a Github repo titled ITECH190-1
+your answers must be in a .txt file
+The drawings you created must be in a folder called figures
+

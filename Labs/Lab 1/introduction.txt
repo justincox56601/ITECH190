@@ -1,0 +1,96 @@
+Introduction to CMD 
+The way we interact with a computer on a day to day basis is through the GUI (Graphical User Interface).
+But that wasn't always the case.  And in many ways it is still easier to the terminal.  Today we are
+going to introduce just a couple of commands that are useful in everday use.
+
+first open the Command Prompt (Terminal in Linux) by pressing windows+r, typing cmd, and press return.
+
+From here you can navigate the file structure of your machine.  Create and exectue files, and run your
+whole computer.  for example type "start chrome.exe yahoo.com"
+
+The first command we will learn is 'dir'  This is on windows.  On Linux systems it is 'ls'
+dir will list out and show you all of the files and directories in the current working directory.
+
+Speaking of current working director.  lets go ahead and change the one we are in.  If you look at 
+the list of directories shown on your screen you should see the 'Doucuments' folder listed.  lets jump 
+into that one.
+
+The command is 'cd <path to the directory>  So for us it would be 'cd Documents'.  Notice how the text before
+your curser has changed.  it went from C:\Users\username> to C:\Users\username\Documents>.  Now we can use the dir
+command again to see what is in this directory.
+
+Now lets make a new directory.  The 'mkdir <filename>  will make a new folder with 'filename' in yoru current 
+working directory.  Lets try it out.  Make a directory called itech190-test.  (mkdir itech190-test) Once
+you have run the mkdir command, run the dir command again to see your new directory.
+
+Now lets cd into our itech190-test directory
+
+once we are here, lets make a new txt document.  First lets use the dir command to show that our directory is 
+currently empty.  Now let's use the 'echo' command to create a new file.  Normally echo will just display whatever
+you want to the screen.  For example type the command 'echo test.txt'.  Notice that test.txt is displayed to the 
+screen.  But if you run the dir command again, your directory is still empty.
+
+However, if we use the '>' key with echo we can create a new file.  Enter the comane 'echo > test.txt'.  Now this 
+time there is no output but if you run the dir comand again you will see that there is now a file in your directory 
+called test.txt!
+
+lets get rid of that.  It was just a test document anyways right?  'del <filename>' is the command we will use to 
+delete this file.  go ahead and delete it 'del test.txt'
+
+But what if I actually wanted to open that file and write stuff to it?  lets do that now!
+
+First, lets create a new text file called todo.  'echo > todo.txt' and then to open it we have to tell the computer 
+which program to use to open it.  In our case notepad will work.  the command is 'notepad todo.txt'  This will open
+out todo.txt file in a notepad.  How exciting!   
+
+Alright.  Lets go ahead and get out of here.  close the notepad.  The commane is alt-F4.  Note this is a windows
+shortcut.  Not a cmd specific one.  So it will close down ANY app/program you are currently in.  So make sure that
+the app you want to close is currently active.  go ahead and alt-F4 the notpad and your curser will go to the most
+recent app you used before the one you just closed.
+
+lets delete the todo file with 'del todo.txt'
+
+Now lets go back the the documents directory.  Currently we are in C:\Users\username\Documents\itech190-test.  To get 
+back to the Documents directory the command is 'cd ../'.  This is the same cd command as before,  except the '../'  
+tells the computer we want to go back up a level.
+
+Now that we are in the Documents directory lets go ahead and delete the itech190-test directory we made.  At first 
+you may think that you can use the same 'del' command that we did earlier to delete a file.  however that will only 
+delete the files in the itech190-test directory.  But the directory will still remain.
+
+To delete the directory we want to use the 'rmdir' command.  Go ahead and try that now.  If you had any subfolders
+or documents in your directory, that command failed.  it gave you an error 'The directory is not empty'.  This is 
+a safety feature.  In order to force it to delete the directory and ALL of the content in the directory, we will 
+add in the /s command.  so now the cammand is 'rmdir /s itech190-test'
+
+go ahead and run this command now.  followed by the 'dir' command in order to confirm you have deleted the whole directory
+
+One last bit of clean up.  You currently have A LOT of text on your screen.  All of the commands, all of the directories
+printed out multiple times.  lets clear the screen.  the command for this is 'cls'.  And boom!  you are back to a bank 
+screen.
+
+You just learned how to:
+1) open command Prompt
+2) navigate your file tree using the 'cd' command
+3) make and remove directories
+4) make, open, and remove files
+5) clear your screen.
+
+When you are working in the IT / Software development space.  This is a workflow you will do all the time. It is 
+good to get used to using the terminal in addition to your normal GUI.
+
+That said lets get started on the next section.
+1) cd into C:\users\username
+2) create a new directory called itech190
+3) cd into itech190
+4) open that directory with the command 'code .' - code is the command for openening VsCode and . tells the computer 
+you want to open the directory you are currently in.
+
+Introduction to GIT 
+In this part of today's lab, we are going to:
+1) create a GitHub account if you don't already have one. 
+2) create a repository
+3) learn how to clone a repository 
+4) make our first commits and pushes. 
+
+Introduction to Python
