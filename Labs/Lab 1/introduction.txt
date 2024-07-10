@@ -1,4 +1,14 @@
 Introduction to CMD 
+In this section of today's lab you will learn: 
+1) open command Prompt
+2) navigate your file tree using the 'cd' command
+3) make and remove directories
+4) make, open, and remove files
+5) clear your screen.
+
+When you are working in the IT / Software development space.  This is a workflow you will do all the time. It is 
+good to get used to using the terminal in addition to your normal GUI.
+
 The way we interact with a computer on a day to day basis is through the GUI (Graphical User Interface).
 But that wasn't always the case.  And in many ways it is still easier to the terminal.  Today we are
 going to introduce just a couple of commands that are useful in everday use.
@@ -69,19 +79,10 @@ One last bit of clean up.  You currently have A LOT of text on your screen.  All
 printed out multiple times.  lets clear the screen.  the command for this is 'cls'.  And boom!  you are back to a bank 
 screen.
 
-You just learned how to:
-1) open command Prompt
-2) navigate your file tree using the 'cd' command
-3) make and remove directories
-4) make, open, and remove files
-5) clear your screen.
 
-When you are working in the IT / Software development space.  This is a workflow you will do all the time. It is 
-good to get used to using the terminal in addition to your normal GUI.
-
-That said lets get started on the next section.
+To get ready for the next part of the lab: 
 1) cd into C:\users\username
-2) create a new directory called itech190
+2) create a new directory called itech190 - this will be your main projects folder for the rest of the semester
 3) cd into itech190
 4) open that directory with the command 'code .' - code is the command for openening VsCode and . tells the computer 
 you want to open the directory you are currently in.
@@ -92,5 +93,50 @@ In this part of today's lab, we are going to:
 2) create a repository
 3) learn how to clone a repository 
 4) make our first commits and pushes. 
+
+The first step is to create your GitHub account if you don't already have one.  If you do, simply login and wait for / skip to
+the next section.  There are no directions for this here.  Simply go to https://github.com , click the 'Sign Up' button in 
+the upper right corner, and follow the instructions.
+
+Once you have created your account it is time to create your first repository.  From the home screen look for a green button
+near the upper left that says 'New' and click it.  Name it itech190-lab1.  This is important.  That is the specific repo Name
+I will search for when grading.  
+
+Make sure the 'Public' radio button is checked, and you can add a README file if you if wish to.  Once you have done that, click
+the 'Create Repository' button at the bottom of the page.
+
+The next page will show you some settings and some code snippets.  What we want is the link in the 'Quick Setup' box that has 
+our repo address.  https;//github.com/username/reponame.git 
+
+Copy that address and hold onto it for now.
+
+Back in VsCode, the top menu ribbon has an menu option called 'Terminal' click it and select 'New Terminal'.  this will open 
+a terminalat the bottom of your screen.  This terminal is the same as the cmd terminal we were just using.  Different session
+but same program.  
+
+In the termial, type the command  'git clone yourgitrepoaddress'
+
+this will clone your remote reposity into your current working directory.  Take a look at your file tree on the left and you will
+see a new folder called 'itech190-lab1'.  lets go ahead and create a new file in there.  Right click the itech190-lab1 directory
+in the file tree, and select the 'New File' option.  Name it index.py.  For now, leave the file blank.  But lets save our work 
+and send all of our changes back to github.
+
+in your terminal, lets make sure we are in the correct directory.  Since we are working on the itech190-lab1 repo, make sure your
+terminal shows your directory as '....ITECH190\itech190-lab1>'  Currently it most likely is in the main ITECH190 directory.  Go 
+ahead and cd into the itech190-lab1 repo.  (cd itech190-lab1)
+
+now type the command 'git status'  this will bring up a list of files that have various changes.  The next thing
+we want to do is add all of the new changes.  You can either add specific files by typing 'git add pathtofile' or if you want to
+add ALL of the files, you can enter the command 'git add -A'
+
+Once you have added yoru changes, we can commit them.  the command for this is 'git commit -m "yoru message goes here"'  For this 
+one lets just use the message "my first commit"  So the command to enter is 'git commit -m "my first commit"'
+
+Finally we want to push our commit to the remote repo on GitHub.  to do that all we need to do is 'git push'
+
+Now if you go back to your GitHub page and look at yoru repositories, you will see your changes are now updated!
+
+To recap, you have just create yoru github account, created a repository, cloned it onto your local machine, made updates,
+commited those changes, and then pushed them back to the cloud.  Awesome!!
 
 Introduction to Python
