@@ -140,3 +140,252 @@ To recap, you have just create yoru github account, created a repository, cloned
 commited those changes, and then pushed them back to the cloud.  Awesome!!
 
 Introduction to Python
+Welcome to your first ptyhon lab!
+Python is a very popular programming language used in academics, research, 
+web development, analytics, and machine learning.  it has a simple syntax
+and is often the first language, peole will learn.
+
+In today's lab we are going to learn the very basics of creating a program
+in python.  We are going to cover:
+
+1) input
+2) output
+3) variables
+4) simple expressions
+
+And we are going to do this by creating a simple number guessing game!
+
+first step is to create a new file in your lab1 directory called 'index.py'
+index is traditionally, across languages, the default main file name.  it 
+isn't required in python, but still generally used. 
+
+right click the lab1 directory in your file tree, select new file, name it 
+index.py
+
+lets get started right away and get something displaying on screen.
+
+type the following line: 
+
+print("hello world")
+
+That's it.  The classic print hello world.  this is the first thing people 
+do when learning languages.
+
+now clear out your terminal with the cls command.  or open one if you have closed 
+your previous one, and make sure you are in the correct directory.  your terminal
+cusrer should be '...\itech190-lab1>'
+
+once you are there, you can run your program by entering the command 'python index.py'
+
+Boom!  your console should show the string "Hello World"
+
+print()  is the basic output method.  Anytime we want to display something to
+the screen in python we use print().  All it does is print out the string that you 
+put inside of the parenthases.
+
+Lets spice it up a little bit and introduce variables.  
+
+variables are storage locations in memory associated with some known or unknown qunatity 
+of data or object referred to as a value.  Wow, that was a mouthful.  Put bluntly  a 
+variable is a named value.  the value can be a simple number, it can be a string, an object, 
+or anything we want.  We can then call that value by the variable name, instead of having to
+write out the value all over again.
+
+Example:  message = "Hello World"
+
+now we can update our program like so:
+
+message = "Hello World"
+print(message)
+
+Once you have made the updates, run the progaram again with 'python index.py'
+
+It should work exactly the same as before.  And that is perfect.
+
+While this example may seem trivial, there are several advantages going on here.  First, 
+I can use this as many times as I want.  let's say i had a program where for some reason I 
+needed to print "Hello World"  100 times in various places.  It is fairly trivial to type 
+Hello World over and over again.  And it is only marginally easier to type 'message'  over
+and over again.  However!  Let's say I needed to update it.  Now I want to print out 
+"Hello Cass Lake" each of those times.  
+
+Without using variable, I would have to go through and find each and every one of those messages
+and update it.  But with variables, we only need to update it in the 1 place where it is defined.
+In fact, it is best practice to use variables almost exclusively.
+
+Before we move on, there is a little bit about python syntax I want to cover.
+
+Variable names HAVE to start with a letter or and underscore.  lower case or upper case doesn't
+matter.  But it can't start with a number or any special character other than an underscore.
+
+In python the nameing convention for variables is snake case, where each word is separated by 
+an underscore.  this_is_an_example_of_snake_casssssse.
+
+In python (well most langauges) it is also customary to make constants all capiatlized.  for example
+say you are making a video game and you want to define the size of each cell in a grid.  That would 
+be considered a constant because once you set it, it should never be changed.  So we would write
+that as CELL_SIZE instead of cell_size.  from the computers perspective it doesn't matter.  It is 
+just naming convention to make it easier for people reading the code to understand at a glance 
+what is going on. 
+
+Deciding what is a variable and what should be a constant really is an artform, and you will get used
+to it over time.
+
+Python statements are deliniated by line breaks.  In most languages statements are deliniated
+with a semicolon ';'.  In many langauges  the following three examples are functionally identical
+to eachother
+
+message = "Hello World";
+print(message);
+
+message = "Hello World"; print(message);
+
+message = "Hello World";
+    print(message);
+
+This is because the semicolon is what defines the end of a satement.  In python, that is not the case.
+All three of the above statements are wildly different.  In python line breaks define the end of a
+statement.  And indentation matters.  
+
+This is valid (notice no semicolons): 
+message = "Hello World"
+print(message)
+
+This is not valie:
+message = "Hello World"
+    print(message)
+
+notice the indentation on the second line.  indentation is used with if statements, methods, objects, 
+and loops.  As this is none of those, you will get a syntax error. Go ahead and give it a try.  Take 
+a look at what the terminal says if you try to indent the print() statement.
+
+This is all well and good.  But the program isn't a fun game yet.
+Lets add some input.
+
+First update our message to 'What is your name?'
+Then after we print that message, lets add a new variable called name, and we will set that to 
+equal input().  Finally we will print would a welcome message to the users by using an fstring. 
+
+an fstring is a string that can accept variables.  They are quite versitile, but we will only be covering 
+the basic use case today. to create our fstring we can simply add braces {} where we want to insert our 
+variables.  in this case, we have saved your name in the 'name' variable so we can do something like this:
+
+welcome_message = f"Welcome {name}!"
+
+Your code should look like this: 
+message = "What is your name?"
+print(message)
+name = input()
+
+welcome_message = f"Welcome {name}!"
+print(welcome_message)
+
+Go ahead and try it out.  Make sure it works and you are happy with it before we move on.
+
+Next lets get started with the guessing game.  First we need to create a new variable to store a 
+random number.  For now, we will just hard code it and come back to the random part later.  Go ahead
+and set your new variable 'random_number' to equal any number you want between 1 and 10.
+
+next lets ask the player to guess a number between 1 and 10.  We will do this by creating a variable
+called guess_prompt and setting it equal to "Please guess a number between 1 and 10."  then we will 
+use the input() command again to store whatever the user inputs.  then finally add a print() at the
+end to just print out our guess_number and the random_number
+
+
+Now your code should look like this:
+message = "what is your name? "
+print(message)
+name = input()
+
+welcome_message = f"welcome {name}"
+print(welcome_message)
+
+random_number = 7
+guess_prompt = "Please guess a number between 1 and 10"
+print(guess_prompt)
+guess_number = input()
+
+print(f"you guessed {guess_number} and the random number is {random_number}")
+
+Things to note.  By adding white space between chunks of code, we can group related things together 
+making it easier to read.
+
+go ahead and run your program and make sure it is running correctly.
+
+Time for the almost final step.  Time to check to see if the number you guessed is correct
+or not.
+
+Start by adding two new variables; correct_message and wrong_message.  You can use whatever string 
+you want for them to convey to the user that they guessed correctly and won.  Or that they guessed
+incorrectly and they lost.
+
+For example:
+correct_message = "Congrats!!  you guessed the secret number."
+wrong_message = "Sorry, that guess was incorrect."
+
+Next we will look into 'if statements'  If statements are used constantly in programming.  We are always 
+checking to see if a value equals another value, or if a condition is true.  In python the syntax for
+if statements is this:
+
+if conditional:
+    do_something()
+else:
+    do_something_else()
+
+we start with the keword if,that is followed by our conditional, finally the line ends with a colon ':' .
+The next lines are indented.  all of the code that is indented will be executed if the conditional is true.
+if the conditional is false, it will skip the indented line(s).
+
+The else keyword is optional.  if it is present it will run only if the conditional is false.  if the
+conditional is true, the whole else block is skipped.
+
+In our case we want to see if the guessed_number is equal to the random_number (our conditional).  If it
+is then we want to print our the correct_message (our true code). if they aren't equal we want to print
+out the wrong_message (our else code)
+
+example:
+if random_number == guessed_number:
+    print(correct_message)
+else: 
+    print(wrong_message)
+
+added into our existing code it now looks like this: 
+message = "what is your name? "
+print(message)
+name = input()
+
+welcome_message = f"welcome {name}"
+print(welcome_message)
+
+random_number = 7
+guess_prompt = "Please guess a number between 1 and 10"
+print(guess_prompt)
+guess_number = input()
+
+correct_message = "Congrats!!  you guessed the secret number."
+wrong_message = "Sorry, that guess was incorrect."
+if random_number == guess_number:
+    print(correct_message)
+else:
+    print(wrong_message)
+
+
+NOTICE:  if you look at the line 'if random_number == guess_number:'  you will see that there
+are two equals signs there.  That is not a mistake.  In programing a single equal sign is an
+assignment.  You are telling the computer that A equals B.  Two equals signs is a comparator.
+You are asking the computer IF A equals B.
+
+Go ahead and run this make sure it works before moving on.  You will notice that it works for the most
+part, but if you guess the correct number it still gives you the wrong_message.  Why is that?
+
+The reason is inputs are alwasy strings.  even if you enter a number, python will think it is a string.
+So to the computer the number 7 is not equal to the string 7.  To fix this, we just need to tell python
+that guessed_number is in fact a number and not a string.  So we are going to do what is called casting.
+We are going to cast guess_number to an integer (whole number).  To do that, we simply wrap our value 
+with int().
+
+in our case it looks like:
+guess_number = int(input())
+
+now guess_number will be a number (integer) and our program will work.  Goahead and make the change to 
+your code and confirm that it works.
